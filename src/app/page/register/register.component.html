@@ -1,0 +1,124 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="container regContainer">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0 regContainerCol">
+                    <h2 class="text-center">Escort Database</h2>
+                    <hr>
+                    <form class="form-horizontal" id="registration_form">
+                            <fieldset>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">Name : </label>  
+                                    <div class="col-md-6 inputGroupContainer">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                            <input  name="name" placeholder="Name" class="form-control"  type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" >Age : </label> 
+                                    <div class="col-md-6 inputGroupContainer">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                            <input name="age" placeholder="Age" class="form-control"  type="number">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">City : </label>  
+                                    <div class="col-md-6 inputGroupContainer">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                                            <input name="city" placeholder="city" class="form-control"  type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group"> 
+                                    <label class="col-md-4 control-label">Country : </label>
+                                    <div class="col-md-6 selectContainer">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                                            <select name="country" class="form-control selectpicker" >
+                                                <option value=" " >Please select your country</option>
+                                                <option>A</option>
+                                                <option>B</option>
+                                                <option>C</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">Mobile Number : </label>  
+                                    <div class="col-md-6 inputGroupContainer">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                                            <input name="mobile" placeholder="Mobile Number" class="form-control" type="number">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">Service : </label>
+                                    <div class="col-md-6 inputGroupContainer">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                                            <textarea class="form-control" name="service" placeholder="Service"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="fileUpload form-group text-center">
+                                    <div class="col-md-4">
+                                        <label class="control-label">Photo 1</label>
+                                        <div class="inputGroupContainer">
+                                            <span class="uploadedFile">
+                                                <img src="../../assets/images/upload_image.jpg" alt="Demo Upload Image">
+                                                <!--<img src="{{uploadImg1}}" alt="Upload Img">-->
+                                            </span>
+                                            <div class="uploadBtn">Upload
+                                                <input type="file" [(ngModel)]="uploadImg1" class="uploadInput" name="photo1">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="control-label">Photo 2</label>
+                                        <div class="inputGroupContainer">
+                                            <span class="uploadedFile">
+                                                <img src="../../assets/images/upload_image.jpg" alt="Demo Upload Image">
+                                                <!--<img src="{{uploadImg2}}" alt="Upload Img">-->
+                                            </span>
+                                            <div class="uploadBtn">Upload
+                                                <input type="file" [(ngModel)]="uploadImg2" class="uploadInput" name="photo2">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="control-label">Photo 3</label>
+                                        <div class="inputGroupContainer">
+                                            <span class="uploadedFile">
+                                                <img src="../../assets/images/upload_image.jpg" alt="Demo Upload Image">
+                                                <!--<img src="{{uploadImg3}}" alt="Upload Img">-->
+                                            </span>
+                                            <div class="uploadBtn">Upload
+                                                <input type="file" [(ngModel)]="uploadImg3" class="uploadInput" name="photo3">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Success message -->
+                                <div class="alert alert-success" role="alert" id="success_message">Success 
+                                    <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.
+                                </div>
+                                <!-- Button -->
+                                <button type="submit" class="btn submitEscort" (click)="goEscortlist()">Upload Escort <span class="glyphicon glyphicon-send"></span></button>
+                                 <a class="escortRecord" (click)="goEscortlist()">View upload records</a>
+                            </fieldset>
+                        </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    

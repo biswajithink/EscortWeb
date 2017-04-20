@@ -1,0 +1,64 @@
+
+.escortlistContainer .media-left{
+    padding-right: 0px;
+}
+.escortlistContainer .media-left a{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    overflow: hidden;
+    display: block;
+    border: 1px solid #870024;
+}
+.escortlistContainer .escortlistCol{
+    margin: 15px auto;
+    border-bottom: 1px solid rgba(67, 67, 67, 0.3); 
+}
+.escortlistContainer .media-body h4, .escortlistContainer .media-body span, .escortlistContainer .media-body p{
+    margin-left: 15px;
+    display: block;
+}
+.escortlistContainer .media-body h4{
+    font-weight: bold;
+}
+.escortlistContainer .media-body span > small, .escortlistContainer .media-body p > small, .escortlistContainer .media-body h4 > small{
+    font-weight: bold;
+    color: #252525;
+}
+.escortlistContainer .media-body span, .escortlistContainer .media-body p{
+    font-size: 16px;
+    line-height: 22px;
+}
+.regContainerCol{
+    position: relative;
+}
+.logoutBtn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 100px;
+    height: 38px;
+    border: 1px solid #7c0021;
+    border-radius: 4px;
+    line-height: 38px;
+    font-size: 16px;
+    color: #7c0021;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+.logoutBtn:hover{
+    text-decoration: none;
+}
+.addBtn{
+    right: inherit;
+    left: 20px;
+}
+
+@media screen and (max-width:767px){
+
+    .regContainerCol{
+        padding-top: 70px;
+    }
+
+}

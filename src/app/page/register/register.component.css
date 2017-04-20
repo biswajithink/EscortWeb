@@ -1,0 +1,60 @@
+
+
+#success_message{ display: none;}
+
+
+.fileUpload{
+    margin-top: 20px;
+}
+.fileUpload label{
+    text-align: center;
+}
+.fileUpload .uploadedFile{
+    width: 150px;
+    height: 150px;
+    background: #fff;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1px solid #c8c8c8;
+}
+.fileUpload .uploadedFile img{
+    width: 100%;
+    display: block;
+}
+.uploadBtn{
+    position: relative;
+    width: 100px;
+    height: 38px;
+    border: 1px solid #7c0021;
+    border-radius: 4px; 
+    padding: 5px;
+    line-height: 38px;
+    font-size: 16px;
+    display: block;
+    margin: 0px auto;
+    margin-top: 15px;
+}
+.uploadBtn .uploadInput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    height: 38px;
+    width: 100px;
+}
+
+.escortRecord{
+    text-align: center;
+    color: #870024;
+    font-size: 16px;
+    display: block;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.escortRecord:hover{
+    text-decoration: underline;
+}
+

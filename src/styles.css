@@ -1,0 +1,90 @@
+/* You can add global styles to this file, and also import other style files */
+
+body, html{
+    width: 100%;
+    height: 100%;
+}
+app-root{
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+login, register, signup, escortlist{
+    display: table-cell;
+    vertical-align: middle;
+}
+body{
+    background: #a91139 url('assets/images/backgroundImg.png') repeat top left;
+}
+.regContainerCol{
+    background: #e5b26a;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #7c0021;
+    border-radius: 10px;
+}
+.regContainer hr{
+    border-top: 2px solid #7c0021;
+    height: 2px;
+    width: 80%;
+    margin: 15px auto;
+}
+.regContainer h2{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.regContainer .control-label{
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.submitEscort{
+    width: 180px;
+    margin: 25px auto;
+    background: #870024;
+    display: block;
+    color: #fff;
+    font-size: 18px;
+}
+.submitEscort:hover{
+    color: #fff;
+}
+.submitEscort:activated, .submitEscort:focus, .submitEscort:active{
+    color: #fff;
+}
+.regContainer form{
+    margin-top: 20px;
+}
+.regContainer form label, .regContainer form input{
+    display: inline-block;
+}
+.signUpDiv{
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.signUpDiv span, .signUpDiv a{
+    display: inline-block;
+    color: #000;
+}
+.signUpDiv a{
+    margin-left: 5px;
+    font-weight: bold;
+    color: #7c0021;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.signUpDiv a:hover{
+    color: #7c0021;
+}
+
+
+@media screen and (max-width:767px){
+
+    .regContainerCol{
+        float: none;
+        width: 80%;
+        margin: 50px auto;
+    }
+
+}
