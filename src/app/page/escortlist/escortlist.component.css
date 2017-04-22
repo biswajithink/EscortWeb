@@ -11,8 +11,7 @@
     border: 1px solid #870024;
 }
 .escortlistContainer .escortlistCol{
-    margin: 15px auto;
-    border-bottom: 1px solid rgba(67, 67, 67, 0.3); 
+    margin: 15px auto;    
 }
 .escortlistContainer .media-body h4, .escortlistContainer .media-body span, .escortlistContainer .media-body p{
     margin-left: 15px;
@@ -55,6 +54,58 @@
     left: 20px;
 }
 
+.choose{
+
+    display:none;
+}
+
+.selectQueryDiv{
+    position: relative;
+    margin-bottom: 0px;
+}
+.selectQueryDiv label, .selectQueryDiv select{
+    display: inline-block;
+    margin-bottom: 8px;
+}
+.selectQueryDiv label{
+    font-size: 18px;
+}
+.selectQueryDiv select.form-control, .selectQueryDiv input.form-control{
+    width: 200px;
+    border: 1px solid #7c0021;
+    color: #7c0021;
+    font-size: 18px;
+}
+.selectQueryDiv input.form-control{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.selectQueryDiv input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #7c0021;
+}
+.selectQueryDiv input::-moz-placeholder { /* Firefox 19+ */
+  color: #7c0021;
+}
+.selectQueryDiv input:-ms-input-placeholder { /* IE 10+ */
+  color: #7c0021;
+}
+.selectQueryDiv input:-moz-placeholder { /* Firefox 18- */
+  color: #7c0021;
+}
+#myTable{
+    padding-left: 0px;
+}
+#myTable .media{
+    border-bottom: 1px solid rgba(67, 67, 67, 0.3);
+    margin-bottom: 0px;
+    padding-bottom: 15px;
+}
+#myTable .media-heading{
+    font-weight: bold;
+    font-size: 18px;
+}
 @media screen and (max-width:767px){
 
     .regContainerCol{

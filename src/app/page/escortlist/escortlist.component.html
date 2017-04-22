@@ -8,39 +8,39 @@
                     <a (click)="logout()" class="logoutBtn">Logout</a>
                     <hr>
                     <div class="col-md-12 escortlistCol">
-                        <div class="media">
-                            <div class="media-left">
-                                <a href="#">
-                                <img class="media-object img-responsive" src="assets/images/person-icon.png" alt="Person Icon">
-                                </a>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading"><small>Name :</small> Lorem Ipsum</h4>
-                                <span><small>Age :</small> 28 Years</span>
-                                <span><small>Mobile :</small> 8888888888</span>
-                                <p><small>Service :</small> Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                                </p>
-                            </div>
+                        <div class="selectQueryDiv form-group">
+                            <label>Filter By : </label>
+                            <select class="form-control" (change)="onItemChange()" [(ngModel)]="category">
+                                <option value="" disabled selected style="display: none;">Choose Search By...</option>
+                                <option *ngFor=" let value of filterItem" value="{{value.id}}">{{value.name}}</option>
+                            </select>
+
+                            <input type="text" id="con" (keyup)="country()" placeholder="Search for Country.." class="choose form-control">
+                            <input type="text" id="cit" (keyup)="city()" placeholder="Search for City.." class="choose form-control">
+                            <input type="text" id="age" (keyup)="age()" placeholder="Search for Age.." class="choose form-control">
+                            <input type="text" id="ser" (keyup)="service()" placeholder="Search for Service.." class="choose form-control">
                         </div>
+
+                        <ul id="myTable">
+                            <li class="media" *ngFor="let escort of escortlist">
+                                <div class="media-left">
+                                    <a href="#">
+                                    <img class="media-object img-responsive" src="{{escort.thumb}}" alt="Person Icon">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <span class="media-heading"><small>Name : </small>{{escort.name}}</span>
+                                    <span><small>Age : </small>{{escort.age}}</span>
+                                    <span><small>Country : </small>{{escort.country}}</span>
+                                    <span><small>City : </small>{{escort.city}}</span>
+                                    <span><small>Mobile : </small>{{escort.mobile}}</span>
+                                    <span><small>Service : </small>{{escort.service}}</span>
+                                </div>
+                            </li>
+                        </ul>
+                        
                     </div>
-                    <div class="col-md-12 escortlistCol">
-                        <div class="media">
-                            <div class="media-left">
-                                <a href="#">
-                                <img class="media-object img-responsive" src="../../assets/images/person-icon.png" alt="Person Icon">
-                                </a>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading"><small>Name :</small> Lorem Ipsum</h4>
-                                <span><small>Age :</small> 26 Years</span>
-                                <span><small>Mobile :</small> 6666666666</span>
-                                <p><small>Service :</small> Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </div>
